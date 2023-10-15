@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background: linear-gradient(
+        #6D4C91 0%, 
+        #AD89E0 20%, 
+        #DCB2F2 45%, 
+        #E4C7EF 70%, 
+        #FFEFD8 100%
+    );
+}
+
+svg {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    min-width: 500px;
+}
+
+.clouds {
+    bottom: 0;
+}
+
+.sparkle {
+    top: 0;
+}
+
+#book {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 15vw;
+
+    width: 70%;
+    height: calc(100% - 15vw);
+
+    background: grey;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.page:nth-child(2n) {
+    background: red;
+}
+
+.page {
+    padding: 6%;
+}
